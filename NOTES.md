@@ -7,6 +7,10 @@ Ported from Flask/Python app in `error-detector-py-master/`.
 ## TODOs
 - [ ] 1. Check dev server runs correctly (`npm run dev` from `error-detector-client/`)
 - [ ] 2. Check `errorData.ts` — review regex patterns and help messages for accuracy (user noted these may need fixing)
+- [ ] 3. Check accuracy of error detection across all categories
+- [ ] 4. Check regex patterns and feedback/help notes in `errorData.ts`
+- [ ] 5. Add video links (YouTube IDs) to error entries in `errorData.ts`
+- [ ] 6. Change icon set back to original (currently using lucide-react)
 
 ## Key files
 - `src/errorData.ts` — all regex patterns and help text (port of `error_feedback.py`)
