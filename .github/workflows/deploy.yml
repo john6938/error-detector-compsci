@@ -35,7 +35,7 @@ jobs:
         run: npm run build
         working-directory: error-detector-client
         env:
-          BASE_URL: /error-detector-compsi/
+          BASE_URL: /error-detector-compsci/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
