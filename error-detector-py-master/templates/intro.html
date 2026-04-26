@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Introduction</title>
+</head>
+<body>
+
+<section>
+    <p>This detector is designed primarily for writers of scientific articles, particularly the fields of information and computer science. Use a generic grammar detector first (e.g. <a href="https://www.grammarly.com/grammar-check">Grammarly</a> ). This detector is coded to find mistakes that occur in a corpus of computer and information science research articles. If you would like to see how this tool works, click <a href="https://youtu.be/IPIqmDPWbc8">one-minute tutorial</a>.</p>
+</section>
+
+<div class="largefloating-box">
+    {% for detector_name, detector in error_dict.items() %}
+    <p><strong>{{detector_name}}</strong></p>
+    {% for err_group_name, err_group in detector.items() %}
+        {% if err_group.video %}
+            <i class="em {{emoticons[detector_name]}}"></i> <b>{{err_group_name}}</b>&nbsp;<a href="https://youtu.be/{{err_group.video}}">{{err_group.title}}</a>
+        {% else %}
+            <i class="em {{emoticons[detector_name]}}"></i> <b>{{err_group_name}}</b>&nbsp;{{err_group.title}}
+        {% endif %}
+    {% endfor %}
+    <br><br>
+    {% endfor %}
+</div>
+
+</body>
+</html>
