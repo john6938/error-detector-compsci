@@ -72,12 +72,7 @@ export default function App() {
 
           {/* Header */}
           <div className="flex items-center gap-3 mb-6">
-            <div
-              className="w-11 h-11 shrink-0 rounded flex items-center justify-center text-white font-bold text-lg"
-              style={{ backgroundColor: '#5a7abf' }}
-            >
-              ED
-            </div>
+            <img src="/tnt-logo.svg" alt="TNT Lab logo" className="w-11 h-11 shrink-0" />
             <div>
               <h1 className="text-2xl font-bold leading-tight text-gray-900">
                 Error Detector
@@ -174,12 +169,7 @@ export default function App() {
 
           {/* Left: logo + title */}
           <div className="flex items-center gap-2 shrink-0">
-            <div
-              className="w-8 h-8 rounded flex items-center justify-center text-white font-bold text-sm"
-              style={{ backgroundColor: '#5a7abf' }}
-            >
-              ED
-            </div>
+            <img src="/tnt-logo.svg" alt="TNT Lab logo" className="w-8 h-8" />
             <span className="font-semibold text-gray-900 hidden sm:block">
               Error Detector
             </span>
