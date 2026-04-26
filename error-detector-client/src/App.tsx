@@ -152,7 +152,7 @@ export default function App() {
 
           {/* Footer */}
           <div className="mt-5 pt-4 border-t border-gray-100 text-center text-xs text-gray-400">
-            <p>John Blake, University of Aizu &copy; 2024</p>
+            <p>John Blake, Aston University &copy; 2026</p>
           </div>
         </div>
       </div>
@@ -257,7 +257,7 @@ export default function App() {
 
       {/* Footer */}
       <footer className="bg-white border-t border-gray-100 px-4 py-2 text-center text-xs text-gray-400 shrink-0">
-        John Blake, University of Aizu &copy; 2024
+        John Blake, Aston University &copy; 2026
       </footer>
     </div>
   );
