@@ -1,5 +1,6 @@
 import { useState, useMemo } from 'react';
 import { Upload } from 'lucide-react';
+import tntLogoUrl from './assets/tnt-logo.svg';
 import { ErrorAnnotator } from './components/ErrorAnnotator';
 import { detectErrors } from './errorDetector';
 import { categoryMeta } from './errorData';
@@ -72,7 +73,7 @@ export default function App() {
 
           {/* Header */}
           <div className="flex items-center gap-3 mb-6">
-            <img src={`${import.meta.env.BASE_URL}tnt-logo.svg`} alt="TNT Lab logo" className="w-11 h-11 shrink-0" />
+            <img src={tntLogoUrl} alt="TNT Lab logo" className="w-11 h-11 shrink-0" />
             <div>
               <h1 className="text-2xl font-bold leading-tight text-gray-900">
                 Error Detector
@@ -169,7 +170,7 @@ export default function App() {
 
           {/* Left: logo + title */}
           <div className="flex items-center gap-2 shrink-0">
-            <img src={`${import.meta.env.BASE_URL}tnt-logo.svg`} alt="TNT Lab logo" className="w-8 h-8" />
+            <img src={tntLogoUrl} alt="TNT Lab logo" className="w-8 h-8" />
             <span className="font-semibold text-gray-900 hidden sm:block">
               Error Detector
             </span>
